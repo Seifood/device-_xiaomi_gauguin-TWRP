@@ -141,11 +141,13 @@ TW_EXCLUDE_TWRPAPP := true
 TW_NO_SCREEN_BLANK := true
 PLATFORM_VERSION := 16.1.0
 
+# SHRP
 SHRP_PATH := device/xiaomi/gauguin
 SHRP_MAINTAINER := Droneship
 SHRP_DEVICE_CODE := gauguin
 SHRP_REC_TYPE := Treble
-SHRP_DEVICE_TYPE := A/B
+SHRP_DEVICE_TYPE := A_only
+INC_IN_REC_MAGISK := true
 SHRP_NOTCH := true
 SHRP_EDL_MODE := 1
 SHRP_EXTERNAL := /external_sd
@@ -154,7 +156,8 @@ SHRP_OTG := /usb_otg
 SHRP_FLASH := 1
 SHRP_DARK := true
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
-
+SHRP_OFFICIAL := true
 # haptics
 TW_SUPPORT_INPUT_1_2_HAPTICS := true
 #
+
