@@ -144,11 +144,10 @@ PLATFORM_VERSION := 16.1.0
 # SHRP
 SHRP_PATH := device/xiaomi/gauguin
 SHRP_MAINTAINER := Droneship
-SHRP_DEVICE_CODE := gauguin
+SHRP_DEVICE_CODE := Gauguin
 SHRP_REC_TYPE := Treble
 SHRP_DEVICE_TYPE := A_only
 INC_IN_REC_MAGISK := true
-SHRP_EXCLUDE_MAGISK_FLASH := true
 SHRP_NOTCH := true
 SHRP_EDL_MODE := 1
 SHRP_EXTERNAL := /external_sd
@@ -163,6 +162,7 @@ INC_IN_REC_ADDON_2 := true
 INC_IN_REC_ADDON_3 := true
 INC_IN_REC_ADDON_5 := true
 INC_IN_REC_ADDON_6 := true
+SHRP_EXPRESS := true
 
 #SHRP Addons
 SHRP_EXTERNAL_ADDON_PATH := "device/xiaomi/gauguin/addon/"
