@@ -148,6 +148,7 @@ SHRP_DEVICE_CODE := gauguin
 SHRP_REC_TYPE := Treble
 SHRP_DEVICE_TYPE := A_only
 INC_IN_REC_MAGISK := true
+SHRP_EXCLUDE_MAGISK_FLASH := true
 SHRP_NOTCH := true
 SHRP_EDL_MODE := 1
 SHRP_EXTERNAL := /external_sd
@@ -157,14 +158,14 @@ SHRP_FLASH := 1
 SHRP_DARK := true
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
 SHRP_OFFICIAL := true
-INC_IN_REC_ADDON_1 := true
+INC_IN_REC_ADDON_1 := true 
 INC_IN_REC_ADDON_2 := true
 INC_IN_REC_ADDON_3 := true
-INC_IN_REC_ADDON_4 := true
+INC_IN_REC_ADDON_5 := true
+INC_IN_REC_ADDON_6 := true
 
 #SHRP Addons
-
-SHRP_EXTERNAL_ADDON_PATH := "device/xiaomi/lancelot/addon/"
+SHRP_EXTERNAL_ADDON_PATH := "device/xiaomi/gauguin/addon/"
 SHRP_EXTERNAL_ADDON_1_NAME := "SELinux Permissiver"
 SHRP_EXTERNAL_ADDON_1_INFO := "Makes SELinux Permissive"
 SHRP_EXTERNAL_ADDON_1_FILENAME := "permissiver.zip"
