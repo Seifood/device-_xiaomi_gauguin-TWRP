@@ -143,6 +143,7 @@ PLATFORM_VERSION := 16.1.0
 
 # SHRP
 SHRP_PATH := device/xiaomi/gauguin
+SHRP_OFFICIAL := true
 SHRP_MAINTAINER := Droneship
 SHRP_DEVICE_CODE := Gauguin
 SHRP_REC_TYPE := Treble
@@ -156,7 +157,6 @@ SHRP_OTG := /usb_otg
 SHRP_FLASH := 1
 SHRP_DARK := true
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
-SHRP_OFFICIAL := true
 INC_IN_REC_ADDON_1 := true 
 INC_IN_REC_ADDON_2 := true
 INC_IN_REC_ADDON_3 := true
