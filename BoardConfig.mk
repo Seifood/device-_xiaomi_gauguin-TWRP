@@ -160,8 +160,7 @@ SHRP_OFFICIAL := true
 INC_IN_REC_ADDON_1 := true 
 INC_IN_REC_ADDON_2 := true
 INC_IN_REC_ADDON_3 := true
-INC_IN_REC_ADDON_5 := true
-INC_IN_REC_ADDON_6 := true
+INC_IN_REC_ADDON_4 := true
 SHRP_EXPRESS := true
 
 #SHRP Addons
@@ -178,24 +177,18 @@ SHRP_EXTERNAL_ADDON_2_FILENAME := "enforcer.zip"
 SHRP_EXTERNAL_ADDON_2_BTN_TEXT := "Flash"
 SHRP_EXTERNAL_ADDON_2_SUCCESSFUL_TEXT := "Flashed Successfully"
 SHRP_INC_IN_REC_EXTERNAL_ADDON_2 := true
-SHRP_EXTERNAL_ADDON_3_NAME := "Unlock Logo Remover"
-SHRP_EXTERNAL_ADDON_3_INFO := "Removes Unlock Logo on Redmi Splash Screen"
-SHRP_EXTERNAL_ADDON_3_FILENAME := "Unlock-Logo-Remover.zip"
+SHRP_EXTERNAL_ADDON_3_NAME := "MIUI disable replace shrp"
+SHRP_EXTERNAL_ADDON_3_INFO := "makes your recovery doesn't replaced"
+SHRP_EXTERNAL_ADDON_3_FILENAME := "disable-replace-shrp.zip"
 SHRP_EXTERNAL_ADDON_3_BTN_TEXT := "Flash"
 SHRP_EXTERNAL_ADDON_3_SUCCESSFUL_TEXT := "Flashed Successfully"
 SHRP_INC_IN_REC_EXTERNAL_ADDON_3 := true
-SHRP_EXTERNAL_ADDON_5_NAME := "[MIUI] Disable Replace SHRP"
-SHRP_EXTERNAL_ADDON_5_INFO := "Flash in MIUI To Stop MIUI Recovery From Replacing"
-SHRP_EXTERNAL_ADDON_5_FILENAME := "disable-replace-shrp.zip"
-SHRP_EXTERNAL_ADDON_5_BTN_TEXT := "Flash"
-SHRP_EXTERNAL_ADDON_5_SUCCESSFUL_TEXT := "Installed"
-SHRP_INC_IN_REC_EXTERNAL_ADDON_5 := true
-SHRP_EXTERNAL_ADDON_6_NAME := "[MAGISK] Safetynet Fix"
-SHRP_EXTERNAL_ADDON_6_INFO := "A magisk module which attempts to fix Safetynet"
-SHRP_EXTERNAL_ADDON_6_FILENAME := "safetynet-fix.zip"
-SHRP_EXTERNAL_ADDON_6_BTN_TEXT := "Flash"
-SHRP_EXTERNAL_ADDON_6_SUCCESSFUL_TEXT := "Flashed Successfully"
-SHRP_INC_IN_REC_EXTERNAL_ADDON_6 := true
+SHRP_EXTERNAL_ADDON_4_NAME := "Magisk-V24.3"
+SHRP_EXTERNAL_ADDON_4_INFO := "Flash it to get root access"
+SHRP_EXTERNAL_ADDON_4_FILENAME := "Magisk-V24.3.zip"
+SHRP_EXTERNAL_ADDON_4_BTN_TEXT := "Flash"
+SHRP_EXTERNAL_ADDON_4_SUCCESSFUL_TEXT := "Installed"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_4 := true
 # haptics
 TW_SUPPORT_INPUT_1_2_HAPTICS := true
 #
