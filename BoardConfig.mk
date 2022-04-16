@@ -157,6 +157,44 @@ SHRP_FLASH := 1
 SHRP_DARK := true
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
 SHRP_OFFICIAL := true
+INC_IN_REC_ADDON_1 := true
+INC_IN_REC_ADDON_2 := true
+INC_IN_REC_ADDON_3 := true
+INC_IN_REC_ADDON_4 := true
+
+#SHRP Addons
+
+SHRP_EXTERNAL_ADDON_PATH := "device/xiaomi/lancelot/addon/"
+SHRP_EXTERNAL_ADDON_1_NAME := "SELinux Permissiver"
+SHRP_EXTERNAL_ADDON_1_INFO := "Makes SELinux Permissive"
+SHRP_EXTERNAL_ADDON_1_FILENAME := "permissiver.zip"
+SHRP_EXTERNAL_ADDON_1_BTN_TEXT := "Flash"
+SHRP_EXTERNAL_ADDON_1_SUCCESSFUL_TEXT := "Flashed Successfully"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_1 := true
+SHRP_EXTERNAL_ADDON_2_NAME := "SELinux Enforcer"
+SHRP_EXTERNAL_ADDON_2_INFO := "Reverts Back to Enforcing SELinux"
+SHRP_EXTERNAL_ADDON_2_FILENAME := "enforcer.zip"
+SHRP_EXTERNAL_ADDON_2_BTN_TEXT := "Flash"
+SHRP_EXTERNAL_ADDON_2_SUCCESSFUL_TEXT := "Flashed Successfully"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_2 := true
+SHRP_EXTERNAL_ADDON_3_NAME := "Unlock Logo Remover"
+SHRP_EXTERNAL_ADDON_3_INFO := "Removes Unlock Logo on Redmi Splash Screen"
+SHRP_EXTERNAL_ADDON_3_FILENAME := "Unlock-Logo-Remover.zip"
+SHRP_EXTERNAL_ADDON_3_BTN_TEXT := "Flash"
+SHRP_EXTERNAL_ADDON_2_SUCCESSFUL_TEXT := "Flashed Successfully"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_3 := true
+SHRP_EXTERNAL_ADDON_5_NAME := "[MIUI] Disable Replace SHRP"
+SHRP_EXTERNAL_ADDON_5_INFO := "Flash in MIUI To Stop MIUI Recovery From Replacing"
+SHRP_EXTERNAL_ADDON_5_FILENAME := "disable-replace-shrp.zip"
+SHRP_EXTERNAL_ADDON_5_BTN_TEXT := "Flash"
+SHRP_EXTERNAL_ADDON_5_SUCCESSFUL_TEXT := "Installed"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_5 := true
+SHRP_EXTERNAL_ADDON_6_NAME := "[MAGISK] Safetynet Fix"
+SHRP_EXTERNAL_ADDON_6_INFO := "A magisk module which attempts to fix Safetynet"
+SHRP_EXTERNAL_ADDON_6_FILENAME := "safetynet-fix.zip"
+SHRP_EXTERNAL_ADDON_6_BTN_TEXT := "Flash"
+SHRP_EXTERNAL_ADDON_6_SUCCESSFUL_TEXT := "Flashed Successfully"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_6 := true
 # haptics
 TW_SUPPORT_INPUT_1_2_HAPTICS := true
 #
