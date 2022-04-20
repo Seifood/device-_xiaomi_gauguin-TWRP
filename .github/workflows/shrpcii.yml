@@ -1,4 +1,4 @@
-name: SHRP CI
+name: SHRP CII
 on:
   workflow_dispatch:
     inputs:
