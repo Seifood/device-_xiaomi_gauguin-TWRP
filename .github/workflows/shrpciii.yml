@@ -1,4 +1,4 @@
-name: Building shrp292j
+name: Building shrp292jsmm
 
 on:
 #  release:
@@ -24,7 +24,8 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
+    timeout-minutes: 160
 
     steps:
        - name: Checkout
