@@ -44,12 +44,12 @@ jobs:
          run: |
               cd ${BuildPath}/out/target/product/${CODENAME}/
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet *TWRP*.img
-              ./transfer wet *zeus*.img
+              ./transfer wet *boot*.img
+              ./transfer wet *boot*.img
        - name: PUSH To TG
          run: |
               cd ${BuildPath}/out/target/product/${CODENAME}/
-              ZIP=$(echo *TWRP*.img)
+              ZIP=$(echo *boot*.img)
               sudo zip -r9 TestBuild_"${CODENAME}" $ZIP
               ZIPs=$(echo TestBuild_"${CODENAME}".img)
               curl -F document=@$ZIPs "https://api.telegram.org/bot$TOKEN/sendDocument" \
@@ -78,11 +78,11 @@ jobs:
                  expect \"sftp> \"
                  send "cd /home/frs/projects/dkkr/$::env(CODENAME)/\r"
                  set timeout -1
-                 send "put *TWRP*.img\r"
+                 send "put *boot*.img\r"
                  expect "Uploading"
                  expect "*100%*"
                  expect "sftp*"
-                 send "put *Zeus*.img\r"
+                 send "put *boot*.img\r"
                  expect "Uploading"
                  expect "*100%*"
                  expect "sftp*"
@@ -102,7 +102,7 @@ jobs:
                  expect \"sftp> \"
                  send "cd /home/frs/project/dkkr/seif/\r"
                  set timeout -1
-                 send "put *TWRP*.img\r"
+                 send "put *boot*.img\r"
                  expect "Uploading"
                  expect "*100%*"
                  expect "sftp*"
