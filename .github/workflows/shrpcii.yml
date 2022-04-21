@@ -59,7 +59,7 @@ jobs:
                  expect \"Password\"       
                  send "${{ secrets.SFPASS }}\r"
                  expect \"sftp> \"
-                 send "cd /home/frs/projects/dkkr/$::env(CODENAME)/\r"
+                 send "cd /home/frs/project/shrp/test/\r"
                  set timeout -1
                  send "put *boot*.img\r"
                  expect "Uploading"
@@ -83,7 +83,7 @@ jobs:
                  expect \"Password\"       
                  send "${{ secrets.SFPASS }}\r"
                  expect \"sftp> \"
-                 send "cd /home/frs/project/dkkr/seif/\r"
+                 send "cd /home/frs/project/shrp/test/\r"
                  set timeout -1
                  send "put *boot*.img\r"
                  expect "Uploading"
