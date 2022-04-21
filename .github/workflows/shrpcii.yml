@@ -6,7 +6,7 @@ on:
         description: 'set true if you wanna push Official Build'
         required: false
 env:
-  MANIFEST: "https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11"
+  MANIFEST: "https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1"
   # Recovery Manifest URL with -b branch
   DT_LINK: "https://github.com/Seifood/device_xiaomi_zeus-TWRP.git"
   # Your Device Tree Link
