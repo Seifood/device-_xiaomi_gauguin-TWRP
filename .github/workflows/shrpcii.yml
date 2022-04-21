@@ -45,24 +45,7 @@ jobs:
               cd ${BuildPath}/out/target/product/${CODENAME}/
               curl -sL https://git.io/file-transfer | sh
               ./transfer wet *boot*.img
-              ./transfer wet *boot*.img
-       - name: PUSH To TG
-         run: |
-              cd ${BuildPath}/out/target/product/${CODENAME}/
-              ZIP=$(echo *boot*.img)
-              sudo zip -r9 TestBuild_"${CODENAME}" $ZIP
-              ZIPs=$(echo TestBuild_"${CODENAME}".img)
-              curl -F document=@$ZIPs "https://api.telegram.org/bot$TOKEN/sendDocument" \
-                  -F chat_id="-1001296548080" \
-                  -F "disable_web_page_preview=true" \
-                  -F "parse_mode=html" \
-                  -F caption=" <i> SHRP Recovery </i> for <b> '$VENDOR' '$CODENAME' </b> is Available for Testing Purposes Only | Build finished on <b> $(date) </b> | <i> #SHRP Recovery </i> "
-              ZIP=$(echo *AddonRescue*.zip)
-              curl -F document=@$ZIP "https://api.telegram.org/bot$TOKEN/sendDocument" \
-                  -F chat_id="-1001296548080" \
-                  -F "disable_web_page_preview=true" \
-                  -F "parse_mode=html" \
-                  -F caption=" <i> SHRP AddOnRescue </i> for <b> '$VENDOR' '$CODENAME' </b> | <i> #SHRP Recovery </i> "
+              ./transfer wet *boot*.img             
        - name: Pushing Build To SourceForge
          run: |
               if [[ "$OFFICIAL_BUILD" == "true" ]]; then
