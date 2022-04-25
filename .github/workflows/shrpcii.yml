@@ -44,8 +44,8 @@ jobs:
          run: |
               cd ${BuildPath}/out/target/product/${CODENAME}/
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet *recovery*.img
-              ./transfer wet *recovery*.img             
+              ./transfer wet *boot*.img
+              ./transfer wet *boot*.img             
        - name: Pushing Build To SourceForge
          run: |
               if [[ "$OFFICIAL_BUILD" == "true" ]]; then
@@ -61,11 +61,11 @@ jobs:
                  expect \"sftp> \"
                  send "cd /home/frs/project/shrp/test/\r"
                  set timeout -1
-                 send "put *recovery*.img\r"
+                 send "put *boot*.img\r"
                  expect "Uploading"
                  expect "*100%*"
                  expect "sftp*"
-                 send "put *recovery*.img\r"
+                 send "put *boot*.img\r"
                  expect "Uploading"
                  expect "*100%*"
                  expect "sftp*"
@@ -85,7 +85,7 @@ jobs:
                  expect \"sftp> \"
                  send "cd /home/frs/project/shrp/test/\r"
                  set timeout -1
-                 send "put *recovery*.img\r"
+                 send "put *boot*.img\r"
                  expect "Uploading"
                  expect "*100%*"
                  expect "sftp*"
