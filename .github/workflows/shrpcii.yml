@@ -8,15 +8,15 @@ on:
 env:
   MANIFEST: "https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11"
   # Recovery Manifest URL with -b branch
-  DT_LINK: "https://github.com/Seifood/device_xiaomi_rubens.git"
+  DT_LINK: "https://github.com/Seifood/device_xiaomi_zeus-TWRP.git"
   # Your Device Tree Link
   VENDOR: "xiaomi"
   # Your Device's Vendor name as in used inside DT. Example: xiaomi, samsung, asus, etc.
-  CODENAME: "rubens"
+  CODENAME: "zeus"
   # Your Device's Codename as in used inside DT." Example: nikel, phoenix, ginkgo, etc.
   KERNEL_LINK: ""
   # Kernel repo link with optional -b branch. Only for building kernel from source. Ignore if using prebuilt.
-  TARGET: "bootimage"
+  TARGET: "recoveryimage"
   # Set as recoveryimage (or bootimage if no recovery partition avaiable)
   FLAVOR: "eng"
   # eng by default, change the variable if you want userdebug
