@@ -6,13 +6,13 @@ on:
         description: 'set true if you wanna push Official Build'
         required: false
 env:
-  MANIFEST: "https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1"
+  MANIFEST: "https://github.com/SHRP/manifest.git -b v3_10.0"
   # Recovery Manifest URL with -b branch
-  DT_LINK: "https://github.com/Seifood/device_xiaomi_zeus-TWRP.git"
+  DT_LINK: "https://github.com/Seifood/twrp_redmi_begonia"
   # Your Device Tree Link
-  VENDOR: "xiaomi"
+  VENDOR: "redmi"
   # Your Device's Vendor name as in used inside DT. Example: xiaomi, samsung, asus, etc.
-  CODENAME: "zeus"
+  CODENAME: "begonia"
   # Your Device's Codename as in used inside DT." Example: nikel, phoenix, ginkgo, etc.
   KERNEL_LINK: ""
   # Kernel repo link with optional -b branch. Only for building kernel from source. Ignore if using prebuilt.
@@ -20,7 +20,7 @@ env:
   # Set as recoveryimage (or bootimage if no recovery partition avaiable)
   FLAVOR: "eng"
   # eng by default, change the variable if you want userdebug
-  SOURCE: "twrp"
+  SOURCE: "omni"
   # Set as omni (or twrp if using v3_11.0)
   EXTRA_CMD: ""
   # For qualcomm FDE devices put git clone https://github.com/omnirom/android_vendor_qcom_opensource_commonsys --depth=1 -b android-9.0 vendor/qcom/opensource/commonsys in EXTRA CMD
@@ -44,7 +44,7 @@ jobs:
          run: |
               cd ${BuildPath}/out/target/product/${CODENAME}/
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet *recovery*.img
+              ./transfer wet **.zip
               ./transfer wet *recovery*.img             
        - name: Pushing Build To SourceForge
          run: |
@@ -85,7 +85,7 @@ jobs:
                  expect \"sftp> \"
                  send "cd /home/frs/project/shrp/test/\r"
                  set timeout -1
-                 send "put *recovery*.img\r"
+                 send "put *shrp*.zip\r"
                  expect "Uploading"
                  expect "*100%*"
                  expect "sftp*"
