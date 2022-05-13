@@ -1,4 +1,4 @@
-name: Building shrp292jsmm
+name: Building shrp292jsmmmk
 
 on:
 #  release:
@@ -14,12 +14,12 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
-  MANIFEST_BRANCH: twrp-11
-  DEVICE: zeus
-  DT_LINK: https://github.com/Seifood/device_xiaomi_zeus-TWRP.git
-  DT_PATH: device/xiaomi/zeus
-  TARGET: bootimage
+  MANIFEST: https://github.com/SHRP/manifest.git
+  MANIFEST_BRANCH: v3_10.0
+  DEVICE: begonia
+  DT_LINK: https://github.com/Seifood/twrp_redmi_begonia.git
+  DT_PATH: device/redmi/begonia
+  TARGET: recoveryimage
   TZ: Asia/Kolkata
 
 jobs:
@@ -58,7 +58,7 @@ jobs:
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh &&lunch twrp_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && rm -rf .repo && mka $TARGET
+              . build/envsetup.sh &&lunch twrp_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
        - uses: actions/upload-artifact@v2
          with:
