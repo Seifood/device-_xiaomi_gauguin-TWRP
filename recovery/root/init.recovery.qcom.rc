@@ -24,6 +24,7 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
+import /init.recovery.qcom_decrypt.rc
 
 on fs
     chown system system /sys/bus/i2c/drivers/aw8624_haptic/1-005a/f0_save
@@ -34,7 +35,6 @@ on fs
     chown system drmrpc /dev/qseecom
     chmod 0664 /dev/ion
     chown system system /dev/ion
-    install_keyring
 
 on early-fs
     start vold
