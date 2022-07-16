@@ -33,8 +33,3 @@ PRODUCT_NAME := twrp_gauguin
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 10T Lite
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Qcom Decryption
-PRODUCT_PACKAGES += \
-    qcom_decrypt \
-    qcom_decrypt_fbe
